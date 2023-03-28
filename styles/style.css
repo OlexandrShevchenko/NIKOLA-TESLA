@@ -59,7 +59,6 @@ header {
 nav ul {
     display: flex;
     list-style: none;
-    justify-content: space-between;
     gap: 80px;
 }
 
@@ -368,51 +367,7 @@ nav a:hover {
 
 /* Registration */
 
-input {
-    width: 200px;
-    height: 30px;
-    padding: 20px 10px; 
-    line-height: 1.75rem; 
-    background-color: #D9D9D9;
-    outline: none;
-    border: none;
-}
-
-input[type=text] {
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-    background: rgba(217, 217, 217, 0.71);
-    background-image: url('../images/registration/user\ 4.svg');
-    background-position: 10px 10px; 
-    background-repeat: no-repeat;
-    padding: 22px 20px 20px 60px;
-    width: 233px;
-}
-
-input[type=tel] {
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-    background: rgba(217, 217, 217, 0.71);
-    background-image: url('../images/registration/-phone-in-talk_90490\ 4.svg');
-    background-position: 10px 10px; 
-    background-repeat: no-repeat;
-    padding: 22px 20px 20px 60px;
-    color: rgba(27, 29, 31, 0.51);
-    width: 233px;
-}
-
-.sign-in-btn {
-    border-radius: 8px;
-    background-color: #46B1DE;
-    padding: 0;
-    font-size: 19px;
-    height: 48px;
-    color: #fff;
-    max-width: 180px;
-}
-
+/* First Border */
 .sign-in {
     width: 845px;
     height: 265px;
@@ -424,6 +379,7 @@ input[type=tel] {
     padding: 10px;
 }
 
+/* Second Border */
 .sign-in-content {
     width: 821px;
     height: 247px;
@@ -432,23 +388,119 @@ input[type=tel] {
     border-radius: 10px;
 }
 
+/* Sign In H2 */
 .sign-in-content h2 {
     padding-top: 29px;
     text-align: center;
 }
 
+/* Sign In P */
 .sign-in-content p {
     padding-top: 7px;
     text-align: center;
 }
 
+/* Sign In CONTAINER for inputs & button*/
 .sign-in-container {
     display: flex;
     justify-content: space-evenly;
     padding-top: 44px;
 }
 
+/* INPUT & BUTTONS */
+/* Special settings */
+input {
+    width: 200px;
+    height: 30px;
+    padding: 20px 10px; 
+    line-height: 1.75rem; 
+    background-color: #D9D9D9;
+    outline: none;
+    border: none;
+}
 
+/* Input TEXT */
+input[type=text] {
+    background: rgba(217, 217, 217, 0.71);
+    background-image: url('../images/registration/user\ 4.svg');
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+    padding: 22px 20px 20px 60px;
+    position: relative;
+}
+
+input[type=text]::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -15px;
+    width: 1000px;
+    height: 100-px;
+    background-color: #ff0000;
+    transform: rotate(45deg);
+    padding: 0;
+}
+
+/* Input TEL */
+input[type=tel] {
+    background: rgba(217, 217, 217, 0.71);
+    background-image: url('../images/registration/-phone-in-talk_90490\ 4.svg');
+    background-repeat: no-repeat;
+    background-position: 10px 10px; 
+    padding: 22px 20px 20px 60px;
+}
+
+/* Inputs Style */
+input[type=text],
+input[type=tel] {
+    width: 233px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: .5s;
+}
+
+/* Inputs Focus*/
+input[type=text]:focus ,
+input[type=tel]:focus {
+    border: 2px solid #46B1DE;
+    outline: none;
+    transition: .5s;
+}
+/* Button SUBMIT */
+/* .submit-btn {
+    border-radius: 8px;
+    background-color: #46B1DE;
+    padding: 0;
+    font-size: 19px;
+    height: 48px;
+    color: #fff;
+    max-width: 180px;
+} */
+
+.submit-btn {
+    display: block;
+    text-align: center;
+    color: #fff;
+    width: 180px;
+    height: 48px;
+    font-size: 19px;
+    border-radius: 8px;
+    background-color: #46B1DE;
+    border: 1px solid ;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.submit-btn:hover {
+    color: #46B1DE;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.submit-btn:focus {
+    outline: none;
+}
 
 /* Images container */
 .images-container {
