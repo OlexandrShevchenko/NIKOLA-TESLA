@@ -96,11 +96,24 @@ nav a:hover {
 .a-lang {
     color: #1B1D1F;
     text-decoration: none;
+    margin-right: 24px;
+    font-size: 20px;
 }
 
-#stick::after {
-    content: "|";
-    padding: 0px 12px;
+.stick {
+    position: relative;
+}
+
+.stick::after {
+    content: "";
+    position: absolute;
+    left: -33px;
+    width: 22px;
+    height: 1px;
+    background-color: #000;
+    transform: rotate(90deg);
+    margin-left: 10px;
+    margin-top: 9px;
 }
 
 /* Header Conteiner */
