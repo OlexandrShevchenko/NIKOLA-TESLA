@@ -185,7 +185,7 @@ nav a:hover {
     position: absolute;
     bottom: 0px;
     top: 141px;
-    left: 900px;
+    left: 855px;
 }
 
 /* Cards */
@@ -193,7 +193,7 @@ nav a:hover {
     display: flex;
     justify-content: space-between;
     max-width: 1180px;
-    padding-top: 220px;
+    padding-top: 200px;
     z-index: 1;
 }
   
@@ -364,12 +364,6 @@ input {
     outline: none;
     border: none;
 }
-/* Не знаю як зробити бордер та інпуті */
-/* .input-container:focus {
-    border: 2px solid #46B1DE;
-} */
-
-
 
 input[type=text] {
     border: 2px solid #ccc;
@@ -381,12 +375,6 @@ input[type=text] {
     background-repeat: no-repeat;
     padding: 22px 20px 20px 60px;
     width: 233px;
-}
-
-/* Не праює */
-input[type=text]::before {
-    content: "|";
-
 }
 
 input[type=tel] {
@@ -411,7 +399,6 @@ input[type=tel] {
     color: #fff;
     max-width: 180px;
 }
-
 
 .sign-in {
     width: 845px;
@@ -525,16 +512,13 @@ footer {
 .nik-p, .tel-p {
     padding-top: 20px;
 }
-/* Милиця для телефону */
+
 .tel-p::before {
-    content: "";
-    position: absolute;
-    background-image: url(../images/footer/phone.png);
-    background-repeat: no-repeat;
-    width: 30px;
-    padding-bottom: 30px;
-    top: 2325px;
-    left: 1120px;
+    content: url(../images/footer/phone.png);
+}
+
+.tel-p a {
+    padding-left: 13px;
 }
 
 .ave-p {
@@ -547,123 +531,32 @@ footer {
     padding-top: 9px; 
     width: 126px;
 }
-
+/* Instagram */
 .inst-p {
     padding-top: 13px;
-    padding-left: 32px;
 }
 
 .inst-p::before {
-    content: "";
-    position: absolute;
-    background-image: url(../images/footer/instagram.png);
-    background-repeat: no-repeat;
-    width: 30px;
-    top: 2400px;
-    left: 1122px;
-    padding-bottom: 100px;
+    content: url(../images/footer/instagram.png);
 }
 
+.inst-p a {
+    padding-left: 13px;
+}
+/* Mail */
 .mail-p {
-    padding-top: 18px;
-    padding-left: 32px;
+    padding-top: 13px;
 }
 
 .mail-p::before {
-    content: "";
-    position: absolute;
-    background-image: url(../images/footer/email.png);
-    background-repeat: no-repeat;
-    width: 30px;
-    top: 2435px;
-    left: 1120px;
-    padding-bottom: 100px;
+    content: url(../images/footer/email.png);
 }
+
 .mail-p a {
-    padding-top: 16.5px;
-}
 
-/* .inst-link {
-    position: relative;
 }
-
-.inst-link::before {
-    content: "";
-    position: absolute;
-    background-image: url(../images/footer/instagram.png);
-} */
 
 /* Copyright */
 .copyright {
-    position: absolute;
-    left: 1282px;
-    top: 2490px;
+
 }
-
-/* .sign-in {
-    display: flex;
-    width: 845px;
-    height: 265px;
-
-    background: #fff;
-    border: 1px solid #D9D9D9;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-
-    padding: 10px;
-    margin: 0 auto;
-}
-
-.sign-in-container {
-    width: 821px;
-    height: 247px;
-
-    border: 1px solid #D9D9D9;
-    backdrop-filter: blur(2px);
-    border-radius: 10px;
-
-    margin: 0 auto;
-}
-
-.sign-in-container h2 {
-    text-align: center;
-    padding-top: 29px;
-}
-
-.sign-in-container p {
-    text-align: center;
-    padding-top: 7px;
-}
-
-.sign-in-buttons {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 44px;
-}
-
-.input-container {
-    width: 233px;
-    padding: 15px;
-    background-color: #D9D9D9B5;
-    border-radius: 8px;
-    align-items: center;
-    font-family: 'Muller-Regular';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 19px;
-    line-height: 27px;
-}
-
-. {
-    color: #fff;
-    text-decoration: none;
-}
-
-. {
-    width: 180px;
-    align-items: center;
-    background-color: #46B1DE;
-    border-radius: 8px;
-    text-align: center;
-    padding: 20px;
-} */
