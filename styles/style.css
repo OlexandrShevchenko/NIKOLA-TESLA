@@ -32,6 +32,7 @@ body {
     height: 780px;
     background-size: cover;
     padding-top: 60px;
+    position: relative;
 }
 /* Header container */
 header {
@@ -467,17 +468,8 @@ input[type=tel]:focus {
     outline: none;
     transition: .5s;
 }
-/* Button SUBMIT */
-/* .submit-btn {
-    border-radius: 8px;
-    background-color: #46B1DE;
-    padding: 0;
-    font-size: 19px;
-    height: 48px;
-    color: #fff;
-    max-width: 180px;
-} */
 
+/* Button SUBMIT */
 .submit-btn {
     display: block;
     text-align: center;
@@ -489,15 +481,15 @@ input[type=tel]:focus {
     background-color: #46B1DE;
     border: 1px solid ;
     cursor: pointer;
-    transition: 1s;
+    transition: 1.2s;
 }
-
+/* Button HOVER */
 .submit-btn:hover {
     color: #46B1DE;
     background-color: #fff;
     cursor: pointer;
 }
-
+/* Button FOCUS */
 .submit-btn:focus {
     outline: none;
 }
