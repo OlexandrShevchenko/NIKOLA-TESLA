@@ -1,3 +1,5 @@
-.idea/
-target/
-build/
+# ignore log files
+*.log
+
+# ignore temporary files
+*.tmp
